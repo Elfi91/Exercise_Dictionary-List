@@ -1,4 +1,4 @@
-# ESERCIZI 03/12/2025
+# ESERCIZI LISTA
 
 ## Esercizio 1.1: Manipolazione Base - DONE
 File: liste_base.py
@@ -49,3 +49,23 @@ Minimo: 12.0
 Massimo: 78.3
 23.1 presente: True
 Prezzi > 50: 2
+
+# ESERCIZI DIZIONARI
+
+## Esercizio 2.1: Creazione e Accesso
+File: dizionari_base.py
+Obiettivo: Creare dizionari e accedere ai valori.
+Consegna:
+Creare un dizionario config con le seguenti coppie:
+"host": "192.168.1.1"
+"port": 8080
+"ssl": True
+"timeout": 30
+Stampare il valore di "host"
+Modificare "port" in 443
+Aggiungere una nuova chiave "protocol" con valore "https"
+Stampare il dizionario completo
+
+Output Atteso:
+Host: 192.168.1.1
+{'host': '192.168.1.1', 'port': 443, 'ssl': True, 'timeout': 30, 'protocol': 'https'}
