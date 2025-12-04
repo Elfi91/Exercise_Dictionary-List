@@ -1,10 +1,10 @@
 '''
-Obiettivo: Creare dizionari e accedere ai valori.
+Goal: Create dictionaries and access values.
 '''
 
 from typing import Union
 
-# Creare un dizionario config con le seguenti coppie:
+# Create a 'config' dictionary with the following pairs:
 Config: dict[str, Union[str, int]] = {
     "Host" : "192.168.1.1",
     "Port" : 8080,
@@ -12,17 +12,16 @@ Config: dict[str, Union[str, int]] = {
     "Timeout" : 30,
 }
 
+# Print the value of "Host"
+host_key = "Host"
+host_value = Config[host_key]
+print(f"{host_key}: {host_value}")
 
-# Stampare il valore di "host"
-chiave_host = "Host"
-valore_host = Config[chiave_host]
-print(f"{chiave_host}: {valore_host}")
-
-# Modificare "port" in 443
+# Modify "Port" to 443
 Config["Port"] = 443
 
-# Aggiungere una nuova chiave "protocol" con valore "https"
+# Add a new key "Protocol" with value "https"
 Config["Protocol"] = "https"
 
-# Stampare il dizionario completo
+# Print the complete dictionary
 print(Config)
