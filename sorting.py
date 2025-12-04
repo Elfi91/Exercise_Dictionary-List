@@ -5,9 +5,9 @@ Goal: Sort lists and check for element existence.
 from typing import List
 
 # Create a list 'prices' containing:
-price_list: list[int] = ["45.5", "12.0", "78.3", "23.2", "56.7"]
+price_list: list[int] = ["45.5", "12.0", "78.3", "23.1", "56.7"]
 
-## Convert string prices to floats
+# Convert string prices to floats
 float_price: list[float] = [float(price) for price in price_list]
 
 # Create a sorted copy of the list (using sorted())
