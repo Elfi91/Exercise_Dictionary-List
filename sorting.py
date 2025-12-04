@@ -1,5 +1,5 @@
 '''
-Goal: Sort lists and check for element existence.ù
+Goal: Sort lists and check for element existence.
 '''
 
 from typing import List
