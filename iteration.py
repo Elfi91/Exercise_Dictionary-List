@@ -1,24 +1,24 @@
 '''
-Obiettivo: Iterare su dizionari.
+Goal: Iterate over dictionaries.
 '''
 
-# Creare un dizionario utenti con le seguenti coppie:
-utenti: dict[str, str] = {
+# Create a 'users' dictionary with the following pairs:
+users: dict[str, str] = {
     "Alice" : "admin",
     "Bob" : "user",
     "Charlie" : "guest"
 }
 
-# Iterare sul dizionario e stampare ogni coppia nel formato: "Username: alice, Ruolo: admin"
-for username, ruolo in utenti.items():
-    print(f"Username: {username} - Ruolo: {ruolo}")
+# Iterate over the dictionary and print each pair in the format: "Username: Alice - Role: admin"
+for username, role in users.items():
+    print(f"Username: {username} - Role: {role}")
 
-# Verificare se "Bob" è una chiave presente
-is_bob_presente = "Bob" in utenti
-print(f"Bob è presente: {is_bob_presente}")
+# Check if "Bob" is a present key
+is_bob_presente = "Bob" in users
+print(f"Bob is there: {is_bob_presente}")
 
-# Stampare tutte le chiavi (usernames)
-print(f"Usernames: {utenti.keys()}")
+# Print all keys (usernames)
+print(f"Usernames: {users.keys()}")
 
-# Stampare tutti i valori (ruoli)
-print(f"Ruoli: {utenti.values()}")
+# Print all values (roles)
+print(f"Roles: {users.values()}")
