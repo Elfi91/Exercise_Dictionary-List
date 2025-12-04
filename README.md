@@ -1,129 +1,123 @@
-# ESERCIZI LISTA #
+# LIST EXERCISES #
 
-## Esercizio 1.1: Manipolazione Base
-Obiettivo: Familiarizzare con i metodi base delle liste.
+## Exercise 1.1: Basic Manipulation
+Objective: Familiarize with basic list methods.
 
-Consegna:
-- Creare una lista server contenente: ["web01", "db01", "cache01"]
-- Aggiungere "backup01" alla fine
-- Inserire "proxy01" all'inizio (indice 0)
-- Rimuovere "cache01"
-- Stampare la lista finale e la sua lunghezza
+Instructions:
+- Create a list named servers containing: ["web01", "db01", "cache01"]
+- Add "backup01" to the end
+- Insert "proxy01" at the beginning (index 0)
+- Remove "cache01"
+- Print the final list and its length
 
-Output Atteso:
-
+Expected Output:
 ['proxy01', 'web01', 'db01', 'backup01']
-Numero server: 4
+Number of servers: 4
 
-## Esercizio 1.2: Slicing e Accesso
-Obiettivo: Praticare l'accesso agli elementi e lo slicing.
+## Exercise 1.2: Slicing and Access
+Objective: Practice element access and slicing.
 
-Consegna:
-- Creare una lista temperature contenente: [15, 18, 22, 25, 28, 30, 27, 24, 20]
-- Stampare la prima temperatura
-- Stampare l'ultima temperatura
-- Stampare le temperature dalla posizione 2 alla 5 (esclusa)
-- Stampare tutte le temperature con step 2 (saltando una ogni due)
+Instructions:
+- Create a list named temperatures containing: [15, 18, 22, 25, 28, 30, 27, 24, 20]
+- Print the first temperature
+- Print the last temperature
+- Print the temperatures from position 2 up to 5 (exclusive)
+- Print all temperatures with a step of 2 (skipping one every two)
 
-Output Atteso:
+Expected Output:
 
-Prima temperatura: 15
-Ultima temperatura: 20
-Temperature [2:5]: [22, 25, 28]
-Ogni due: [15, 22, 28, 27, 20]
+First temperature: 15
+Last temperature: 20
+Temperatures [2:5]: [22, 25, 28]
+Every two: [15, 22, 28, 27, 20]
 
-## Esercizio 1.3: Ordinamento e Ricerca
-Obiettivo: Ordinare liste e verificare esistenza elementi.
+## Exercise 1.3: Sorting and Searching
+Objective: Sort lists and check for element existence.
 
-Consegna:
-- Creare una lista prezzi contenente: [45.5, 12.0, 78.3, 23.1, 56.7]
-- Creare una copia ordinata della lista (usando sorted())
-- Trovare il prezzo minimo e massimo
-- Verificare se 23.1 è nella lista
-- Contare quanti prezzi sono maggiori di 50
+Instructions:
+- Create a list named prices containing: [45.5, 12.0, 78.3, 23.1, 56.7]
+- Create a sorted copy of the list (using sorted())
+- Find the minimum and maximum price
+- Check if 23.1 is in the list
+- Count how many prices are greater than 50
 
-Output Atteso:
+Expected Output:
 
-Prezzi originali: [45.5, 12.0, 78.3, 23.1, 56.7]
-Prezzi ordinati: [12.0, 23.1, 45.5, 56.7, 78.3]
-Minimo: 12.0
-Massimo: 78.3
-23.1 presente: True
-Prezzi > 50: 2
+Original prices: [45.5, 12.0, 78.3, 23.1, 56.7]
+Sorted prices: [12.0, 23.1, 45.5, 56.7, 78.3]
+Minimum: 12.0
+Maximum: 78.3
+23.1 present: True
+Prices > 50: 2
 
-# ESERCIZI DIZIONARI #
+# DICTIONARY EXERCISES
 
-## Esercizio 2.1: Creazione e Accesso
-Obiettivo: Creare dizionari e accedere ai valori.
+## Exercise 2.1: Creation and Access
+Objective: Create dictionaries and access values.
 
-Consegna:
-- Creare un dizionario config con le seguenti coppie:
-    "host": "192.168.1.1"
-    "port": 8080
-    "ssl": True
-    "timeout": 30
-- Stampare il valore di "host"
-- Modificare "port" in 443
-- Aggiungere una nuova chiave "protocol" con valore "https"
-- Stampare il dizionario completo
+Instructions:
+- Create a dictionary named config with the following pairs: "host": "192.168.1.1" "port": 8080 "ssl": True "timeout": 30
+- Print the value of "host"
+- Modify "port" to 443
+- Add a new key "protocol" with value "https"
+- Print the complete dictionary
 
-Output Atteso:
+Expected Output:
 
 Host: 192.168.1.1
 {'host': '192.168.1.1', 'port': 443, 'ssl': True, 'timeout': 30, 'protocol': 'https'}
 
-## Esercizio 2.2: Iterazione
-Obiettivo: Iterare su dizionari.
+## Exercise 2.2: Iteration
+Objective: Iterate over dictionaries.
 
-Consegna:
-- Creare un dizionario utenti con le seguenti coppie:
-    "alice": "admin"
-    "bob": "user"
+Instructions:
+- Create a dictionary named users with the following pairs: 
+    "alice": "admin" 
+    "bob": "user" 
     "charlie": "guest"
-- Iterare sul dizionario e stampare ogni coppia nel formato: "Username: alice, Ruolo: admin"
-- Verificare se "bob" è una chiave presente
-- Stampare tutte le chiavi (usernames)
-- Stampare tutti i valori (ruoli)
+- Iterate over the dictionary and print each pair in the format: "Username: alice, Role: admin"
+- Check if "bob" is a present key
+- Print all keys (usernames)
+- Print all values (roles)
 
-Output Atteso:
+Expected Output:
 
-Username: alice, Ruolo: admin
-Username: bob, Ruolo: user
-Username: charlie, Ruolo: guest
-bob presente: True
+Username: alice, Role: admin
+Username: bob, Role: user
+Username: charlie, Role: guest
+bob present: True
 Usernames: dict_keys(['alice', 'bob', 'charlie'])
-Ruoli: dict_values(['admin', 'user', 'guest'])
+Roles: dict_values(['admin', 'user', 'guest'])
 
-## Esercizio 2.3: Conteggio Occorrenze
-Obiettivo: Usare dizionari per contare occorrenze.
+## Exercise 2.3: Counting Occurrences
+Objective: Use dictionaries to count occurrences.
 
-Consegna:
-- Creare una lista voti contenente: ["A", "B", "A", "C", "B", "A", "D", "B", "C", "A"]
-- Creare un dizionario vuoto conteggio
-- Iterare sulla lista voti e contare quante volte appare ogni voto nel dizionario
-- Stampare il dizionario finale
-(Suggerimento: Usare conteggio.get(voto, 0) per gestire chiavi mancanti)
+Instructions:
+- Create a list named grades containing: ["A", "B", "A", "C", "B", "A", "D", "B", "C", "A"]
+- Create an empty dictionary named count
+- Iterate over the grades list and count how many times each grade appears in the dictionary
+- Print the final dictionary (Hint: Use count.get(grade, 0) to handle missing keys)
 
-Output Atteso:
+Expected Output:
 
-Conteggio voti: {'A': 4, 'B': 3, 'C': 2, 'D': 1}
+Grade count: {'A': 4, 'B': 3, 'C': 2, 'D': 1}ù
 
-## Esercizio 3.1: Lista di Dizionari
-Obiettivo: Gestire una lista di dizionari (simile a un database).
+## Exercise 3.1: List of Dictionaries
+Objective: Manage a list of dictionaries (similar to a database).
 
-Consegna:
-- Creare una lista prodotti contenente 4 dizionari, ognuno con chiavi "nome", "prezzo", "quantita":
-    {"nome": "Laptop", "prezzo": 899.99, "quantita": 5}
-    {"nome": "Mouse", "prezzo": 25.50, "quantita": 50}
-    {"nome": "Tastiera", "prezzo": 75.00, "quantita": 30}
-    {"nome": "Monitor", "prezzo": 299.99, "quantita": 15}
-- Iterare sulla lista e stampare solo i prodotti con prezzo superiore a 100
-- Calcolare il valore totale dell'inventario (prezzo × quantità per ogni prodotto)
+Instructions:
+- Create a list named products containing 4 dictionaries, each with keys "name", "price", "quantity": 
+    {"name": "Laptop", "price": 899.99, "quantity": 5} 
+    {"name": "Mouse", "price": 25.50, "quantity": 50} 
+    {"name": "Keyboard", "price": 75.00, "quantity": 30} 
+    {"name": "Monitor", "price": 299.99, "quantity": 15}
+- Iterate over the list and print only the products with a price greater than 100
+- Calculate the total inventory value (price × quantity for each product)
 
-Output Atteso:
+Expected Output:
 
-Prodotti > 100€:
+Products > €100:
 - Laptop: €899.99
 - Monitor: €299.99
 
-Valore totale inventario: €11224.20
+Total inventory value: 12524.80€
