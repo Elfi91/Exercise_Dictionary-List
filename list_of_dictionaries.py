@@ -21,7 +21,7 @@ for product in products:
 # Calculate the total inventory value (price × quantity for each product)
 total_inventory_value: float = 0.0
 
-for prodotto in products:
+for product in products:
     partial_value = product["price"] * product["quantity"]
     
     total_inventory_value += partial_value
