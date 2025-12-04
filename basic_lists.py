@@ -1,5 +1,5 @@
 '''
-Obiettivo: Familiarizzare con i metodi base delle liste.
+Goal: Familiarize with basic list methods.
 
 '''
 
@@ -12,5 +12,5 @@ server.insert(0, "proxy01")
 server.remove("cache01")
 
 print(server)
-print(f"Numero server: {len(server)}")
+print(f"Number of server: {len(server)}")
 
