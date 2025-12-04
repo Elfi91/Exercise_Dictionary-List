@@ -1,30 +1,30 @@
 '''
-Obiettivo: Gestire una lista di dizionari (simile a un database).
+Goal: Manage a list of dictionaries (similar to a database).
 '''
 
-# Creare una lista prodotti contenente 4 dizionari, ognuno con chiavi "nome", "prezzo", "quantita":
-prodotti: list[dict] = [
-    {"nome": "Laptop", "prezzo": 899.99, "quantita": 5},
-    {"nome": "Mouse", "prezzo": 25.50, "quantita": 50},
-    {"nome": "Tastiera", "prezzo": 75.00, "quantita": 30},
-    {"nome": "Monitor", "prezzo": 299.99, "quantita": 15}
+# Create a 'products' list containing 4 dictionaries, each with keys "name", "price", "quantity":
+products: list[dict] = [
+    {"name": "Laptop", "price": 899.99, "quantity": 5},
+    {"name": "Mouse", "price": 25.50, "quantity": 50},
+    {"name": "Tastiera", "price": 75.00, "quantity": 30},
+    {"name": "Monitor", "price": 299.99, "quantity": 15}
 ]
 
-# Iterare sulla lista e stampare solo i prodotti con prezzo superiore a 100
-print("--- Prodotti con Prezzo > 100€ ---")
-for prodotto in prodotti:
-    if prodotto["prezzo"] > 100:
-        # Se la condizione è TRUE, si stampa l'intero dizionario
-        print(f"{prodotto['nome']} : {prodotto['prezzo']}")
+# Iterate over the list and print only the products with a price greater than 100
+print("--- Prodcut with price > 100€ ---")
+for product in products:
+    if product["price"] > 100:
+        # If the condition is TRUE, print the entire dictionary
+        print(f"{product['name']} : {product['price']}")
 
 
-# Calcolare il valore totale dell'inventario (prezzo × quantità per ogni prodotto)
-valore_inventario_totale: float = 0.0
+# Calculate the total inventory value (price × quantity for each product)
+total_inventory_value: float = 0.0
 
-for prodotto in prodotti:
-    valore_parziale = prodotto["prezzo"] * prodotto["quantita"]
+for prodotto in products:
+    partial_value = product["price"] * product["quantity"]
     
-    valore_inventario_totale += valore_parziale
+    total_inventory_value += partial_value
 
 # Stampa il risultato finale
-print(f"Valore totale dell'inventario: {valore_inventario_totale:.2f}€")
+print(f"Valore totale dell'inventario: {total_inventory_value:.2f}€")
